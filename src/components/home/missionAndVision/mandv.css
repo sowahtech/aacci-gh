@@ -1,0 +1,27 @@
+.Button {
+    color: white;
+    background:#35393d ;
+    border: 1px solid white;
+    height: 6vh;
+    width: 8vw;
+    margin-left: 9vw;
+    font-weight: bolder;
+}
+.Button:hover {
+    background: orange;
+}
+
+.Button1{
+    color: white;
+    background:#c4480a ;
+    border: 1px solid white;
+    height: 6vh;
+    width: 8vw;
+    margin-left: 9vw;
+    font-weight: bolder;
+}
+
+.Button1:hover{
+    background: #35393d 
+}
+

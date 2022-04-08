@@ -1,0 +1,9 @@
+#language-switcher-container{
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.dropdown-item{
+    color: white;
+    background-color: #3c423e;
+}

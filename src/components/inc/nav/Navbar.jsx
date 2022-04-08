@@ -1,10 +1,9 @@
 import React from 'react'
 import Select from 'react-select'
 import { Link } from "react-router-dom";
-import './nav.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
+import './navbar.css'
+import Menu from './Menu'
+// import nav from './Nav2';
  
 
 
@@ -98,45 +97,7 @@ const nav = () => {
 
 			{/* menu starts from here */}
 			<div className='menu-section'>
-				<Link to="/" style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold'}} >
-					Home
-				</Link>
-				<Link to="/About" className='withDropDown' style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold'}} >
-					About Us
-					<ul>
-						<li>
-							<Link to='/About/Links/Background'>
-								<FontAwesomeIcon icon={faAnglesRight} style={{fontSize: 9.5}} />&nbsp;
-								Background
-							</Link>
-						</li>
-						<li>
-							<Link to='/About/Links/Message'>
-								<FontAwesomeIcon icon={faAnglesRight} style={{fontSize: 9.5}}/>&nbsp;
-								Message from Ghana President
-							</Link>
-						</li>
-						<li>
-							<Link to='/About/Links/MissionAndVision'>
-								<FontAwesomeIcon icon={faAnglesRight} style={{fontSize: 9.5}} />&nbsp;
-								Mission and Vision
-							</Link>
-						</li>
-						<li>
-							<Link to='/About/Links/People'>
-								<FontAwesomeIcon icon={faAnglesRight} style={{fontSize: 9.5}} />&nbsp;
-								The People
-							</Link>
-						</li>
-					</ul>
-				</Link>
-				<Link to="/Membership" style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold'}}>Membership</Link>
-				<Link to="/Services" style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold'}}>Services</Link>
-				<Link to="/Events" style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold'}}>Events</Link>
-				<Link to="/Articles" style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold'}}>Articles</Link>
-				<Link to="/Gallery" style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold'}}>Gallery</Link>
-				<Link to="/Contact" style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold'}}>Contact</Link>
-				<FontAwesomeIcon icon={faSearch} style={{marginTop: 5}} />
+				<Menu />
 			</div>
 			{/* menu ends here */}
 		</div>

@@ -1,11 +1,23 @@
 import React from 'react'
-import Nav from '../inc/nav/Nav'
+import Navbar from '../inc/nav/Navbar'
+import CarouselElement from './carousel/CarouselElement';
+import Welcome from './Welcome';
+import ServicesOnHome from './ServicesOnHome';
+import MissionAndVision from './missionAndVision/MissionAndVision';
 
 
 const home = () => {
 	return (
 		<div>
-			<Nav />
+			<Navbar />
+
+			<CarouselElement />
+
+			<Welcome />
+
+			<ServicesOnHome />
+
+			<MissionAndVision />
 		</div>
 	)
 }
